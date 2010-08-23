@@ -1,0 +1,21 @@
+.twerfect-before-perfect
+{ border-bottom: none !important; }
+.twerfect-perfect
+{ border: 1px outset rgba(255, 215, 0, 0.5) !important;
+  background: rgba(255, 215, 0, .05);
+  margin: 1ex 0;
+  padding-left: 10px !important;
+  border-radius: 10px;
+  position: relative; }
+.twerfect-perfect .author.thumb
+{ left: 10px !important; }
+.twerfect-perfect .status-body:before
+{ content: "Perfect tweet";
+  color: rgb(213, 198, 121);
+  font: 11px Helvetica, Arial, sans-serif;
+  position: absolute;
+  right: 1em;
+  bottom: 8px;
+  text-transform: uppercase; }
+.twerfect-perfect-retweetable .status-body:before
+{ content: "Perfect retweetable" !important; }
