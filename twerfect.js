@@ -4,14 +4,19 @@ $$(".hentry:has(.entry-content)").each(function (entry) {
   var actualLength = entry.down(".entry-content").innerText.length
 
   if (actualLength == 140 || actualLength == retweetableLength) {
-    entry.addClassName("twerfect-perfect")
+    entry.addClassName("twerfect")
 
     if (actualLength == retweetableLength)
-      entry.addClassName("twerfect-perfect-retweetable")
+      entry.addClassName("twerfect-retweetable")
 
     var previous = entry.previous(".hentry:has(.entry-content)")
 
     if (previous)
-      previous.addClassName("twerfect-before-perfect")
+      previous.addClassName("twerfect-before")
   }
+})
+
+
+$$("#permalink:has(.twerfect)").each(function (permalink) {
+  permalink.addClassName("twerfect")
 })

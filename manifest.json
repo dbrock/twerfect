@@ -1,6 +1,6 @@
 {
   "name": "Twerfect",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Highlight perfect-140 tweets on twitter.com.",
   "icons": { "48": "icon-48.png", "128": "icon-128.png" },
   "content_scripts": [{

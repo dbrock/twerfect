@@ -1,15 +1,17 @@
-.twerfect-before-perfect
+.hentry.twerfect-before
 { border-bottom: none !important; }
-.twerfect-perfect
-{ border: 1px outset rgba(255, 215, 0, 0.5) !important;
-  background: rgba(255, 215, 0, .05);
+.hentry.twerfect
+{ border: 1px outset rgba(255, 215, 0, 0.3) !important;
+  background: rgba(255, 215, 0, .1) !important;
   margin: 1ex 0;
   padding-left: 10px !important;
   border-radius: 10px;
   position: relative; }
-.twerfect-perfect .author.thumb
+.hentry.twerfect:hover
+{ background: rgba(255, 215, 0, .15) !important; }
+.hentry.twerfect .author.thumb
 { left: 10px !important; }
-.twerfect-perfect .status-body:before
+.hentry.twerfect .status-body:before
 { content: "Perfect tweet";
   color: rgb(213, 198, 121);
   font: 11px Helvetica, Arial, sans-serif;
@@ -17,5 +19,21 @@
   right: 1em;
   bottom: 8px;
   text-transform: uppercase; }
-.twerfect-perfect-retweetable .status-body:before
+.hentry.twerfect-retweetable .status-body:before
 { content: "Perfect retweetable" !important; }
+.hentry.latest-status.twerfect
+{ padding: 16px 0 6px 16px !important; }
+.hentry.twerfect .actions-hover
+{ bottom: 24px !important; }
+.hentry.twerfect .actions-hover li
+{ background: transparent !important; }
+#permalink .hentry.twerfect
+{ padding: 10px 0 0 16px !important;}
+#permalink .hentry.twerfect .entry-content
+{ background: none !important; }
+#permalink.twerfect .user-info
+{ border-top: none !important; }
+#permalink.twerfect .actions
+{ right: 8px !important; }
+#permalink .hentry.twerfect .actions-hover
+{ right: 10px !important; }
